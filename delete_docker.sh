@@ -1,14 +1,14 @@
 #List all containers (only IDs)
-docker ps -aq
+sudo docker ps -aq
 
 #Stop all running containers
-docker stop $(docker ps -aq)
+sudo docker stop $(docker ps -aq)
 
 #Remove all containers
-docker rm $(docker ps -aq) 
+sudo docker rm $(docker ps -aq) 
 
 #Remove all images
-docker rmi $(docker images -q) 
+sudo docker rmi $(docker images -q) 
 
 #list all docker images 
-docker image ls
+sudo docker image ls

@@ -1,5 +1,5 @@
 setup:
-	python3 -m venv ~/.DevOps-Capstone
+	python3 -m venv ~/.DevOps.Capstone
 
 install:
 	pip install --upgrade pip &&\
