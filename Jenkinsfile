@@ -9,7 +9,7 @@ pipeline {
 
  stage("Build Docker image") {
       steps {
-        sh 'docker build --tag=app .'
+        sh 'sudo docker build --tag=app .'
       }
     }
 
