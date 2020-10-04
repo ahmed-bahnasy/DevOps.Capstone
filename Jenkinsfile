@@ -17,8 +17,8 @@ pipeline {
       steps {
         withDockerRegistry([url: "", credentialsId: "dockerCredentials"]) {
           sh 'docker login'  
-          sh 'docker tag api ahmedbahnasy/capstone:api'  
-          sh 'docker push ahmedbahnasy/capstone:api'  
+          sh 'docker tag app ahmedbahnasy/capstone:app'  
+          sh 'docker push ahmedbahnasy/capstone:app'  
         }
       }
     }
