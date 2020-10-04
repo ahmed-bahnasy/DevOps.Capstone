@@ -11,6 +11,6 @@ COPY . app.py /app/
 RUN pip install --upgrade pip &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
 
-EXPOSE 80
+EXPOSE 8000
 
 CMD ["python", "app.py"]
