@@ -15,7 +15,7 @@ pipeline {
 
  stage("Push Dcoker image") {
       steps {
-        withDockerRegistry([url: "", credentialsId: "dockerhub_id"]) {
+        withDockerRegistry([url: "", credentialsId: "dockerCredentials"]) {
           sh 'docker login'  
           sh 'docker tag api ahmedbahnasy/capstone:api'  
           sh 'docker push ahmedbahnasy/capstone:api'  
